@@ -1,5 +1,4 @@
 @import 'reset.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,300');
 #Wrapper {
@@ -25,6 +24,8 @@
   font-weight: 300;
   letter-spacing: 1px;
   color: #25aeb8;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  text-decoration: none;
 }
 .note-box {
   background-color: #eef4f9;
@@ -48,6 +49,7 @@
   height: 100%;
   color: #252525;
   resize: none;
+  overflow: hidden;
   white-space: -moz-pre-wrap !important;
   /* Mozilla, since 1999 */
   white-space: -pre-wrap;
@@ -108,6 +110,7 @@
   padding: 12px 64px;
   text-align: center;
   text-decoration: none;
+  letter-spacing: 1px;
   font-size: 16px;
   border-radius: 4px;
 }
