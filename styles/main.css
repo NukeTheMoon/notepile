@@ -1,0 +1,147 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,300');
+#Wrapper {
+  height: 100vh;
+  background-color: #2f3238;
+}
+.notes-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.title-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #25aeb8;
+}
+.note-box {
+  background-color: #eef4f9;
+  width: 480px;
+  height: 180px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 11px 26px 0px rgba(37, 174, 184, 0.35);
+  -moz-box-shadow: 0px 11px 26px 0px rgba(37, 174, 184, 0.35);
+  box-shadow: 0px 11px 26px 0px rgba(37, 174, 184, 0.35);
+}
+.note-input-frame {
+  padding: 20px;
+}
+.note-input {
+  border: none;
+  background-color: #eef4f9;
+  font-family: 'Ubuntu-Mono', monospace;
+  font-size: 0.7em;
+  width: 100%;
+  height: 100%;
+  color: #252525;
+  resize: none;
+  white-space: -moz-pre-wrap !important;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  white-space: pre-wrap;
+  /* css-3 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+  white-space: -webkit-pre-wrap;
+  /* Newer versions of Chrome/Safari*/
+  word-break: break-all;
+  white-space: normal;
+}
+.note-content-frame {
+  height: 67%;
+}
+.note-content {
+  font-family: 'Ubuntu-Mono', monospace;
+  font-weight: 400;
+  font-size: 0.7em;
+  padding: 20px;
+  color: #252525;
+}
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 33%;
+}
+.id-frame {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 50%;
+  padding-left: 26px;
+}
+.id {
+  max-width: 50%;
+  font-family: 'Ubuntu-Mono', monospace;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.pile-button-frame {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 50%;
+  padding-right: 10px;
+}
+.pile-button {
+  border: none;
+  color: white;
+  background-color: #25aeb8;
+  padding: 12px 64px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+::selection {
+  background: #25aeb8;
+  /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #25aeb8;
+  /* Gecko Browsers */
+  color: white;
+}
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aligner-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.aligner-left {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.aligner-item {
+  max-width: 50%;
+}
+.aligner-item-top {
+  align-self: flex-start;
+}
+.aligner-item-bottom {
+  align-self: flex-end;
+}
