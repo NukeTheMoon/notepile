@@ -50,7 +50,7 @@
 <script type="text/javascript" src="src/js/lib/jquery.min.js"></script>
 <script type="text/javascript" src="src/js/lib/angular.min.js"></script>
 <script type="text/javascript" src="src/js/app/note.js"></script>
-<script type="text/javascript" src="src/js/app/pile.js"></script>
+<script type="text/javascript" src="src/js/app/controller.js"></script>
 
 </body>
 </html>

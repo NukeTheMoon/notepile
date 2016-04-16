@@ -1,6 +1,8 @@
 var app = angular.module('Notepile', []);
 
 app.controller('NotepileController', function ($scope) {
+    $scope.notes = [];
+
     $scope.pile = function() {
         var note = $('#Note-input').val();
         if (note.length > 0) {
@@ -25,8 +27,13 @@ app.controller('NotepileController', function ($scope) {
             data: dataString,
             cache: false,
             success: function (result) {
+                return result;
                 // TODO: foreach echo? store in array and databind with angular?
             }
         });
-    }
+    };
+
+    var init = function() {
+        $scope.getPile(0, 20);
+    }();
 });
