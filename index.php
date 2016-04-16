@@ -7,9 +7,8 @@
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
-<body>
-
-    <div id="Wrapper">
+<body ng-app="Notepile">
+    <div id="Wrapper" ng-controller="NotepileController">
         <div class="title-header">
             <a href="./index.php" class="title">notepile</a>
         </div>
@@ -25,7 +24,7 @@
                         <p id="Character-counter" class="id">0 / 497</p>
                     </div>
                     <div class="pile-button-frame">
-                        <button class="pile-button" onclick="pile()">pile</button>
+                        <button class="pile-button" ng-click="pile()">pile</button>
                     </div>
                 </div>
             </div>
@@ -49,6 +48,7 @@
     </div>
 
 <script type="text/javascript" src="src/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="src/js/lib/angular.min.js"></script>
 <script type="text/javascript" src="src/js/app/note.js"></script>
 <script type="text/javascript" src="src/js/app/pile.js"></script>
 
