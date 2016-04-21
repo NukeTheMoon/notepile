@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,300');
 #Wrapper {
-  height: 100vh;
   background-color: #2f3238;
 }
 .notes-frame {

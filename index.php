@@ -28,16 +28,16 @@
                     </div>
                 </div>
             </div>
-            <div class="notes-frame">
-                <div class="note-box">
+            <div ng-repeat="note in notes" class="notes-frame">
+                <div class="note-box" id="note-{{ note.id }}">
                     <div class="note-content-frame">
                         <div class="note-input-frame">
-                            <textarea readonly rows="7" cols="71" maxlength="497" name="note" class="note-input" wrap="soft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id felis eget sem sodales rhoncus. Aliquam luctus condimentum nisi, vitae faucibus massa vestibulum at. Phasellus eget quam orci. In hac habitasse platea dictumst. Praesent ut euismod massa. In et eros molestie, vehicula ex eu, cursus arcu. Ut nec congue ex. Vivamus vel nibh efficitur, pellentesque augue sit amet, cursus lorem. Suspendisse nec lectus ornare, porttitor velit vitae, vehicula metus. Fusce commodo risus ut porta amet.</textarea>
+                            <textarea readonly rows="7" cols="71" maxlength="497" name="note" class="note-input" wrap="soft">{{ note.content }}</textarea>
                         </div>
                     </div>
                     <div class="note-footer">
                         <div class="id-frame">
-                            <p class="id">#286893</p>
+                            <a href="./index.php?note={{ note.id }}" class="id">#{{ note.id }}</a>
                         </div>
                         <div class="pile-button-frame">
                         </div>
@@ -47,9 +47,15 @@
         </div>
     </div>
 
+    <div id="url-id" style="display: none;">
+        <?php
+        echo htmlspecialchars(isset($_GET['note']) ? $_GET['note'] : '');
+        ?>
+    </div>
+
 <script type="text/javascript" src="src/js/lib/jquery.min.js"></script>
 <script type="text/javascript" src="src/js/lib/angular.min.js"></script>
-<script type="text/javascript" src="src/js/app/note.js"></script>
+<script type="text/javascript" src="src/js/lib/jquery.waypoints.min.js"></script>
 <script type="text/javascript" src="src/js/app/controller.js"></script>
 
 </body>

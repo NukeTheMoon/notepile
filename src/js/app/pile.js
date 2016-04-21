@@ -14,11 +14,11 @@
 //     }
 // }
 //
-// function getPile(offsetFromTop, amount) {
+// function getPileFrom(offsetFromTop, amount) {
 //     var dataString = 'offsetFromTop=' + offsetFromTop + '&amount=' + amount;
 //     $.ajax({
 //         type: "POST",
-//         url: "./src/php/app/getPile.php",
+//         url: "./src/php/app/getPileFrom.php",
 //         data: dataString,
 //         cache: false,
 //         success: function (result) {
